@@ -8,10 +8,11 @@ class ArrayListDemo {
         list1.add("List1");
         System.out.println("The number of Elements in the list: "+list1.size());
         for(Object o : list1){
-            System.out.println(o.toString());
+            System.out.println(o.toString()); // List1 returned object since since the array is not explicitly type and
+                                              // must be converted to String before printing
         }
         System.out.println("----------Get me the element at position zero----------------");
-        String s = (String) list1.get(0);
+        String s = (String) list1.get(0); //List1 returned object since since the array is not explicitly type and must be converted to String before printing
         System.out.println("The element at position zero is: "+s);
         System.out.println("\r\n");
         //Typed Collection
