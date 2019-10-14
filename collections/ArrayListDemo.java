@@ -4,8 +4,8 @@ import java.util.LinkedList;
 class ArrayListDemo {
     public static void main(String[] args) {
         ArrayList list1 = new ArrayList();
-        list1.add("Madu");
-        list1.add("Man");
+        list1.add("List1");
+        list1.add("List1");
         System.out.println("The number of Elements in the list: "+list1.size());
         for(Object o : list1){
             System.out.println(o.toString());
@@ -17,8 +17,8 @@ class ArrayListDemo {
         //Typed Collection
         System.out.println("-----------------Typed Collection----------------");
         ArrayList<String> list2 = new ArrayList<>();
-        list2.add("Manifesto");
-        list2.add("Man");
+        list2.add("List2");
+        list2.add("List2");
         System.out.println("The number of element(s) in the list: " + list2.size());
         for(String oString : list2){
             System.out.println(oString);
