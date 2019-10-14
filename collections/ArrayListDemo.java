@@ -3,7 +3,7 @@ import java.util.LinkedList;
 
 class ArrayListDemo {
     public static void main(String[] args) {
-        ArrayList list1 = new ArrayList();
+        ArrayList list1 = new ArrayList(); //Not typed
         list1.add("List1");
         list1.add("List1");
         System.out.println("The number of Elements in the list: "+list1.size());
@@ -17,7 +17,7 @@ class ArrayListDemo {
         System.out.println("\r\n");
         //Typed Collection
         System.out.println("-----------------Typed Collection----------------");
-        ArrayList<String> list2 = new ArrayList<>();
+        ArrayList<String> list2 = new ArrayList<>(); //Typed as String
         list2.add("List2");
         list2.add("List2");
         System.out.println("The number of element(s) in the list: " + list2.size());
@@ -27,10 +27,10 @@ class ArrayListDemo {
         System.out.println("\r");
         //Adding one list to another list using addAll() method
          System.out.println("-------addAll demo--------------");
-        ArrayList list3 = new ArrayList<>();
+        ArrayList<String> list3 = new ArrayList<>(); //Typed as String
         list3.add("List3");
         list3.add("List3");
-        LinkedList<String> list4 = new LinkedList<>();
+        LinkedList<String> list4 = new LinkedList<>(); //Typed as String
         list4.add("List4");
         list4.add("List4");
         list4.addAll(list3);
