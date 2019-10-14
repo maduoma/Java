@@ -10,7 +10,7 @@ class ArrayListDemo {
         System.out.println("The number of Elements in the list: "+list1.size());
         for(Object o : list1){ //The list1 returns an object
             System.out.println(o.toString()); // List1 returns object since the array is not explicitly typed and
-                                              // must be converted to String before printing
+                                              // toString() can be used to convert the object to String
         }
         System.out.println("----------Get me the element at position zero----------------");
         String s = (String) list1.get(0); //List1 returns object since the array is not explicitly typed and must be converted to String before printing
