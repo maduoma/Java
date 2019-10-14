@@ -6,6 +6,7 @@ class ArrayListDemo {
         ArrayList list1 = new ArrayList(); //Not typed
         list1.add("List1");
         list1.add("List1");
+        System.out.println("\r\n");
         System.out.println("The number of Elements in the list: "+list1.size());
         for(Object o : list1){ //The list1 returns an object
             System.out.println(o.toString()); // List1 returns object since the array is not explicitly typed and
