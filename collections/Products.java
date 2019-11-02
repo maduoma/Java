@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-class Products{
+class Products  {
     String mItem;
     int mPrice;
 
