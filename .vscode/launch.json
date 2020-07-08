@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Pyramid",
+            "request": "launch",
+            "mainClass": "Pyramid",
+            "projectName": "Java_262a0cb"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Warning",
+            "request": "launch",
+            "mainClass": "Warning",
+            "projectName": "Java_262a0cb"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - While",
+            "request": "launch",
+            "mainClass": "While",
+            "projectName": "Java_262a0cb"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "Solution",
+            "projectName": "Java_262a0cb"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Products",
             "request": "launch",
             "mainClass": "Products"
