@@ -2,7 +2,7 @@ package com.dodemy;
 
 import java.util.Scanner;
 
-public class WhileDemo {
+public class WhileLoop {
     Scanner scanner = new Scanner(System.in);
 
     public String whileDem() {

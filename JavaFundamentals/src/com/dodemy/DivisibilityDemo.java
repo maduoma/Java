@@ -2,7 +2,7 @@ package com.dodemy;
 
 import java.util.Scanner;
 
-final class DivisibleDemo {
+final class DivisibilityDemo {
     Scanner scanner = new Scanner(System.in);
 
     public String scanDemo() {

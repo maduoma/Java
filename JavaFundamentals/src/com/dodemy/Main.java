@@ -3,11 +3,11 @@ package com.dodemy;
 public class Main {
 
     public static void main(String[] args) {
-        DivisibleDemo demo = new DivisibleDemo();
+        DivisibilityDemo demo = new DivisibilityDemo();
         System.out.println(demo.scanDemo());
         System.out.println(demo.scanDemo2());
 
-        System.out.println(new WhileDemo().whileDem());
-        System.out.println(new WhileDemo().whileDem2());
+        System.out.println(new WhileLoop().whileDem());
+        System.out.println(new WhileLoop().whileDem2());
     }
 }

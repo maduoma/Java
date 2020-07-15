@@ -6,7 +6,9 @@ import java.util.Date;
 public class ComparePrimitiveReferenceTypes {
     public static void main(String[] args) {
         /*
-        Primitive types are independent and stores values in different locations. It is called by value.
+        Primitive types are used to store simple values while reference types are use to store complex objects.
+        Primitive types are independent of each other and are stored in different locations. If one value is changed,
+        the other is not affected. Primitive types are copied by their values and these values are independent of each other.
          */
         int x = 50;
         int y = x;
@@ -15,7 +17,7 @@ public class ComparePrimitiveReferenceTypes {
         System.out.println(y);
 
         /*
-        Objects are reference types and reference types are depende
+        Objects are reference types and reference types are dependent of each other and are copied by their references.
          */
         System.out.println("Objects are called by reference: ");
         var now = new Date();
