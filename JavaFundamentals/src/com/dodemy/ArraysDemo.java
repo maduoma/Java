@@ -1,7 +1,7 @@
 package com.dodemy;
 
 import java.util.Arrays;
-import java.util.Scanner;
+
 
 public class ArraysDemo {
     /*
@@ -15,12 +15,12 @@ public class ArraysDemo {
         System.out.println(Arrays.toString(numbers1));
 
         //2-dimensional array: 2 rows and each has 3 columns (2 by 3 matrix).
-        int[][] numbers2 = new int[2][3];
+        int[][] numbers2 = new int[1][3];
         numbers2[0][0] = 2;
         System.out.println(Arrays.deepToString(numbers2));
 
         //
-        int[][][] numbers3 = new int[2][4][5];
+        int[][][] numbers3 = new int[1][4][5];
         numbers3[0][0][0] = 3;
         System.out.println(Arrays.deepToString(numbers3));
     }
