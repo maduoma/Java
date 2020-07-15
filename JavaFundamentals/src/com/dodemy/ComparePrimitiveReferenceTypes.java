@@ -4,9 +4,9 @@ import java.awt.*;
 import java.util.Date;
 
 public class ComparePrimitiveReferenceTypes {
+    //Primitive types are used to store simple values while reference types are used to store complex objects.
     public static void main(String[] args) {
         /*
-        Primitive types are used to store simple values while reference types are use to store complex objects.
         Primitive types are independent of each other and are stored in different locations. If one value is changed,
         the other is not affected. Primitive types are copied by their values and these values are independent of each other.
          */
