@@ -3,6 +3,9 @@ package com.dodemy;
 import java.util.Scanner;
 
 final class DivisibilityDemo {
+    /*
+    A program that checks if input is divisible by 5 or 3.
+     */
     Scanner scanner = new Scanner(System.in);
 
     public String scanDemo() {
