@@ -32,4 +32,16 @@ public class WhileLoop {
         }
         return "Thank you!";
     }
+
+    public String whileDem3() {
+        //Even number from 1 to 10
+        System.out.println("//Even number from 1 to 10");
+        int i = 1;
+        while (i <= 10) {
+            if (i % 2 == 0)
+                System.out.println("Even number: " + i);
+            i++;
+        }
+        return "Thank you!";
+    }
 }

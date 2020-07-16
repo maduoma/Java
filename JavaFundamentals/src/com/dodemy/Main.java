@@ -9,5 +9,9 @@ public class Main {
 
         System.out.println(new WhileLoop().whileDem());
         System.out.println(new WhileLoop().whileDem2());
+
+        System.out.println(new WhileLoop().whileDem3());
+
+        System.out.println(new ForEach().forEachDemo());
     }
 }
