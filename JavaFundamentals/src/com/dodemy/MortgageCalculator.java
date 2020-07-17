@@ -47,5 +47,6 @@ public class MortgageCalculator {
                 / (Math.pow((1 + monthlyInterestRate), numberOfPayments) - 1);
         String formattedMortgage = NumberFormat.getCurrencyInstance().format(mortgage);
         System.out.println("Mortgage (monthly payment): " + formattedMortgage);
+
     }
 }
