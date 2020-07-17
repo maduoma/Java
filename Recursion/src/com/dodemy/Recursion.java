@@ -1,5 +1,13 @@
 package com.dodemy;
 
+/*
+Syntax:
+    returnType methodName(){
+    //code to be executed
+    methodName();//calling same method
+    }
+ */
+
 /**
  * Recursion is the technique of making a function call itself. This technique provides a way to break complicated
  * problems down into simple problems which are easier to solve. For example, adding two numbers is easy to do but
@@ -36,6 +44,65 @@ class Recursion2 {
             return end + sum2(start, end - 1);
         } else {
             return end;
+        }
+    }
+}
+
+//Infinite times
+class Recursion30 {
+    static void p() {
+        System.out.println("hello");
+        p();
+    }
+}
+
+
+//Finite times
+class Recursion31 {
+    static int count = 0;
+
+    static void p() {
+        count++;
+        if (count <= 5) {
+            System.out.println("hello " + count);
+            p();
+        }
+    }
+}
+
+/*
+factorial(5)
+   factorial(4)
+      factorial(3)
+         factorial(2)
+            factorial(1)
+               return 1
+            return 2*1 = 2
+         return 3*2 = 6
+      return 4*6 = 24
+   return 5*24 = 120
+ */
+//Factorial Number
+class Recursion4 {
+    static int factorial(int n) {
+        if (n == 1)
+            return 1;
+        else
+            return (n * factorial(n - 1));
+    }
+}
+
+//Fibonacci Series
+class Recursion5 {
+    static int n1 = 0, n2 = 1, n3 = 0;
+
+    static void printFibo(int count) {
+        if (count > 0) {
+            n3 = n1 + n2;
+            n1 = n2;
+            n2 = n3;
+            System.out.print(" " + n3);
+            printFibo(count - 1);
         }
     }
 }
