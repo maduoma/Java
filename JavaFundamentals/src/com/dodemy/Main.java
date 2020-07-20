@@ -3,7 +3,7 @@ package com.dodemy;
 public class Main {
 
     public static void main(String[] args) {
-        //Calls to different methods
+        //Calls to different methods of different classes
         DivisibilityDemo demo = new DivisibilityDemo();
         System.out.println(demo.scanDemo());
         System.out.println(demo.scanDemo2());

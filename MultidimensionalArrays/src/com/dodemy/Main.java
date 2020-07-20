@@ -7,5 +7,9 @@ public class Main {
         TwoDimArray.TwoDim();
         System.out.println("Looping through two dimensional array");
         TwoDimArrayLooping.TwoDimArrayLoop();
+
+        SimpleArray simpleArray = new SimpleArray();
+        System.out.println("===================Simple Arrays============================");
+        simpleArray.SimpleDimArray();
     }
 }
