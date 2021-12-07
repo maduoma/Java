@@ -23,6 +23,6 @@ public class Main {
         threeArray.threeArray();
         System.out.println("===================Length of 2-dimensional Array===========================");
         int[][] a = { {1, -2, 3}, {-4, -5, 6, 9}, {7} };
-        System.out.println(a.length);
+        System.out.println(a.length); //The arrays in the array are treated as elements each, therefore the length is 3.
     }
 }
