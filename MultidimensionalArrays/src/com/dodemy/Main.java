@@ -21,5 +21,8 @@ public class Main {
         System.out.println("===================Lopping through a 3-dimensional array===========================");
         ThreeArray threeArray = new ThreeArray();
         threeArray.threeArray();
+        System.out.println("===================Length of 2-dimensional Array===========================");
+        int[][] a = { {1, -2, 3}, {-4, -5, 6, 9}, {7} };
+        System.out.println(a.length);
     }
 }
