@@ -7,6 +7,6 @@ public class Main {
 
         WhenToUseWhileLoop whenToUseWhileLoop = new WhenToUseWhileLoop();
         //whenToUseWhileLoop.checkInput();
-        whenToUseWhileLoop.checkInput3();
+        whenToUseWhileLoop.checkInput4();
     }
 }

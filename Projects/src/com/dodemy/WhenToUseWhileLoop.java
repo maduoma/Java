@@ -8,7 +8,7 @@ public class WhenToUseWhileLoop {
     Scanner scanner = new Scanner(System.in);
 
     protected void checkInput() {
-        System.out.println("The use of While Loop");
+        System.out.println("The use of While Loop: !input.equals(\"quit\")");
         while (!input.equals("quit")) {
             System.out.print("Input: ");
             input = scanner.next().toLowerCase();
@@ -18,7 +18,7 @@ public class WhenToUseWhileLoop {
     }
 
     protected void checkInput2() {
-        System.out.println("The use of While Loop");
+        System.out.println("The use of While Loop: break");
         while (!input.equals("quit")) {
             System.out.print("Input: ");
             input = scanner.next().toLowerCase();
@@ -29,8 +29,21 @@ public class WhenToUseWhileLoop {
     }
 
     protected void checkInput3() {
-        System.out.println("The use of While Loop");
+        System.out.println("The use of While Loop: continue");
         while (!input.equals("quit")) {
+            System.out.print("Input: ");
+            input = scanner.next().toLowerCase();
+            if (input.equals("pass"))
+                continue;
+            if(input.equals("quit"))
+                break;
+            System.out.println(input);
+        }
+    }
+
+    protected void checkInput4() {
+        System.out.println("The use of While Loop: true");
+        while (true) {
             System.out.print("Input: ");
             input = scanner.next().toLowerCase();
             if (input.equals("pass"))
