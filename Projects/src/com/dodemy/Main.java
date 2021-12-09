@@ -6,6 +6,7 @@ public class Main {
         divisibilityChecks.checkDivisibility();
 
         WhenToUseWhileLoop whenToUseWhileLoop = new WhenToUseWhileLoop();
-        whenToUseWhileLoop.checkInput();
+        //whenToUseWhileLoop.checkInput();
+        whenToUseWhileLoop.checkInput3();
     }
 }
