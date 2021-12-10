@@ -4,7 +4,7 @@ import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class MortgageCalculator {
-
+// No Data validation here
     public static final byte PERCENT = 100;
     public static final byte MONTHS_IN_YEAR = 12;
 
