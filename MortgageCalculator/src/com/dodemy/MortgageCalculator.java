@@ -11,7 +11,7 @@ public class MortgageCalculator {
     Scanner scanner = new Scanner(System.in);
     int principal = 0;
     float monthlyRate = 0;
-    int numberOfPayment = 0;
+    int numberOfPayments = 0;
 
     protected void CalculateMortgage() {
         while (true) {
@@ -34,12 +34,12 @@ public class MortgageCalculator {
             System.out.print("Period in years: ");
             byte years = scanner.nextByte();
             if (years >= 1 && years <= 30) {
-                numberOfPayment = years * MONTHS_IN_YEAR;
+                numberOfPayments = years * MONTHS_IN_YEAR;
                 break;
             }
             System.out.println("You must enter a value between 1 and 30!");
         }
-        double mortgage = principal * (monthlyRate * Math.pow((1 + monthlyRate), numberOfPayment)) / (Math.pow(1 + monthlyRate, numberOfPayment) - 1);
+        double mortgage = principal * (monthlyRate * Math.pow((1 + monthlyRate), numberOfPayments)) / (Math.pow(1 + monthlyRate, numberOfPayments) - 1);
         System.out.println("Mortgage: " + NumberFormat.getCurrencyInstance().format(mortgage));
 
     }
