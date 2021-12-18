@@ -1,6 +1,6 @@
 package com.dodemy;
 
-
+//OPP Aggregation in Java: The object has its own lifecycle and child cannot belong to another parent object.
 import java.util.ArrayList;
 import java.util.List;
 
