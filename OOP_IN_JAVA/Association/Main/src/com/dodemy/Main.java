@@ -36,11 +36,13 @@ class Main {
             System.out.println(driver.driverName +
                     " is the owner of car Id: " + driver.vehicle.id);
         }
+        /*
         System.out.println();
         System.out.println("Vehicle exists outside Driver block ie {}");
         System.out.println("This is to show that Vehicle exists on its own with Driver!");
         System.out.println("Vehicle Id: " +vehicle.id);
         System.out.println("Vehicle model: " +vehicle.model);
+         */
     }
 
 }
