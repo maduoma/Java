@@ -25,7 +25,7 @@ class Team {
     String name;
     private final List<Player> players;
 
-    Team(String name, List<Player> players) {
+    public Team(String name, List<Player> players) {
         this.name = name;
         this.players = players;
     }
@@ -43,7 +43,7 @@ class School {
     String schoolName;
     private final List<Team> teams;
 
-    School(String schoolName, List<Team> teams) {
+   public School(String schoolName, List<Team> teams) {
         this.schoolName = schoolName;
         this.teams = teams;
     }
@@ -97,7 +97,7 @@ class Main {
         // Creating an instance of School.
         School mySchool = new School("ABC", teams);
 
-        System.out.println("Total players in my school: ");
+        System.out.print("Total players in my school: ");
         // Getting total prayers in the school.
         System.out.println(mySchool.getTotalPlayersInSchool());
     }
