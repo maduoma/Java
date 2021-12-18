@@ -4,7 +4,8 @@ package com.dodemy;
 // In aggregation, the lifetime of the owned object does not depend on the lifetime of the owner.
 
 // The owner object could get deleted, but the owned object can continue to exist in the program. In aggregation, the parent only contains a reference to the child, which removes the child's dependency.
-
+//What should we call it when an object has its own lifecycle and child object cannot belong to another parent object?
+//Aggregation is when objects have their own life cycle and child object can associate with only one parent object
 
 //OPP Aggregation in Java: The object has its own lifecycle and child cannot belong to another parent object.
 import java.util.ArrayList;
