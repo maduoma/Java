@@ -1,4 +1,10 @@
 package com.dodemy;
+//OPP Aggregation in Java: Aggregation follows the has-A model. This creates a parent-child relationship between two classes, with one class owning the object of another.
+//What makes Aggregation unique is Independent LifeTimes.
+// In aggregation, the lifetime of the owned object does not depend on the lifetime of the owner.
+
+// The owner object could get deleted, but the owned object can continue to exist in the program. In aggregation, the parent only contains a reference to the child, which removes the child's dependency.
+
 
 //OPP Aggregation in Java: The object has its own lifecycle and child cannot belong to another parent object.
 import java.util.ArrayList;
