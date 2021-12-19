@@ -3,11 +3,11 @@ package com.dodemy;
 // User Class
 class User {
 
-    // Public Fields
-    public String userName;
-    public String password;
+    // Private fields
+    private String userName;
+    private String password;
 
-    // Parameterized Constructor to create new users
+    //Parameterzied constructor to create a new users
     public User(String userName, String password) {
         this.userName = userName;
         this.password = password;
@@ -18,9 +18,8 @@ class User {
         if (this.userName.toLowerCase().equals(userName.toLowerCase()) && this.password.equals(password)) {
             // .toLowrcase converts all the characters to lowercase & .equals checks if two strings match
 
-            System.out.println("Access Granted against the username: "+this.userName +" and password: "+this.password);
-        }
-        else System.out.println("Invalid Credentials!"); //Else invalid credentials
+            System.out.println("Access Granted against the username: " + this.userName + " and password: " + this.password);
+        } else System.out.println("Invalid Credentials!"); //Else invalid credentials
     }
 
 }
@@ -28,15 +27,14 @@ class User {
 class Main {
 
     public static void main(String[] args) {
-        User educative = new User("Educative","12345"); //Creates a new user and stores the password and username
+        User educative = new User("Educative", "12345"); //Creates a new user and stores the password and username
 
-        educative.login("Educative","12345"); //Grants access because credentials are valid
+        educative.login("Educative", "12345"); //Grants access because credentials are valid
 
         educative.login("Educative", "3456"); //Does not grant access because the credentials are invalid
 
-        educative.password = "3456"; //OOPS SOMEONE ACCESSED THE PASSWORD FIELD
-
-        educative.login("Educative", "3456"); // GRANTS ACCESS BUT THIS SHOULD NOT HAVE HAPPENED!
+        //educative.password = "3456"; //Uncommenting this line will give an error
+        //Fields of User class cannot be accessed now
     }
 
 }
