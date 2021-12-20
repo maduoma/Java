@@ -1,6 +1,6 @@
 package com.dodemy;
 
-class Vehicle {          //Base Vehicle class
+class Vehicle2 {          //Base Vehicle class
 
     private int topSpeed;
 
@@ -11,12 +11,12 @@ class Vehicle {          //Base Vehicle class
 
 }
 
-class Car extends Vehicle { // Derived from Vehicle Base for Prius
+class Car extends Vehicle2 { // Derived from Vehicle Base for Prius
 
     //implementation of Car class
 }
 
-class Truck extends Vehicle {// Derived from Prius can be base to any further class
+class Truck extends Vehicle2 {// Derived from Prius can be base to any further class
 
     //implementation of Truck class
 }
