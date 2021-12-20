@@ -1,85 +1,87 @@
 package com.dodemy;
 
-// Write classes code here
+// Account Class
 class Account {
-    protected double balance;
 
-    public Account(double balance) {
+    protected double balance; // protected variable
+
+    public Account(double balance) { // parametrized constructor
         this.balance = balance;
     }
 
-    public void deposit(double amount) {
-    }
-
-    public void withdraw(double amount) {
-    }
-
-    public void printBalance() {
-    }
+    // member functions
+    public void Deposit(double amount){}
+    public void Withdraw(double amount){}
+    public void printBalance(){}
 
 }
 
+// Savings class extended from Account class
 class Savings extends Account {
-    protected double interestRate = 0.8;
 
-    public Savings(double balance) {
-        super(balance);
+    double interestRate = 0.8; // member variable
+
+    public Savings(int balance) { // parametrized contructor
+        super(balance); // calling base class constructor
     }
 
-    public void deposit(double amount) {
+    // Implementation of member functions
+    public void Deposit(double amount) {
         balance += amount + (amount * interestRate);
     }
 
-    public void withdraw(double amount) {
+    public void Withdraw(double amount) {
         balance -= amount + (amount * interestRate);
     }
 
     public void printBalance() {
-        System.out.println("Your balance in your Savings: " + balance);
+        System.out.println("Balance in your saving account: " + balance);
     }
 
 }
 
+// Current class extended from the Account class
 class Current extends Account {
-    public Current(double balance) {
-        super(balance);
+
+    public Current(int balance) { // Parametrized constructor
+        super(balance); // calling base class constructor
     }
 
-    public void withdraw(double amount) {
-        balance -= amount;
-    }
-
-    public void deposit(double amount) {
+    // Implementation of public member functions
+    public void Deposit(double amount) {
         balance += amount;
     }
 
-    public void printBalance() {
-        System.out.println("Your balance in your Current account: " + balance);
+    public void Withdraw(double amount) {
+        balance -= amount;
     }
-}
 
+    public void printBalance() {
+        System.out.println("Balance in your current account: " + balance);
+    }
+
+}
 
 class Main {
 
-    public static void main(String[] args) {
-        // make instances of classes here
-        Account SAccount = new Savings(50_000);
-        // call their traits functions here
-        SAccount.deposit(1000);
+    public static void main(String args[]) {
+        // creating savings account object
+        Account SAccount = new Savings(50000);
+
+        SAccount.Deposit(1000);
         SAccount.printBalance();
 
-        SAccount.withdraw(3000);
+        SAccount.Withdraw(3000);
         SAccount.printBalance();
 
         System.out.println();
 
-        // make instances of classes here
-        Account CAccount = new Current(50_000);
-        // call their traits functions here
-        CAccount.deposit(1000);
+        // creating current account object
+        Account CAccount = new Current(50000);
+        CAccount.Deposit(1000);
         CAccount.printBalance();
 
-        CAccount.withdraw(3000);
+        CAccount.Withdraw(3000);
         CAccount.printBalance();
     }
 
